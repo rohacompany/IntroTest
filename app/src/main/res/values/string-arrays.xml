@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nongga_search_member">
+        <item>전체</item>
+        <item>회원</item>
+        <item>비회원</item>
+    </string-array>
+
+    <string-array name="nongga_search_month_age">
+        <item>송아지</item>
+        <item>육성우</item>
+        <item>번식우</item>
+        <item>비육우</item>
+    </string-array>
+
+    <string-array name="nongga_search_sex">
+        <item>암</item>
+        <item>수</item>
+        <item>거세</item>
+    </string-array>
+
+    <string-array name="main_tabs_arrays">
+        <item>홈</item>
+        <item>농가찾기</item>
+        <item>개체찾기</item>
+        <item>교배정보</item>
+        <item>분만정보</item>
+        <item>초음파정보</item>
+        <item>출하정보</item>
+        <item>방역정보</item>
+        <item>거세정보</item>
+        <item>질병정보</item>
+        <item>예방접종</item>
+    </string-array>
+
+    <string-array name="main_member_arrays">
+        <item>전체</item>
+        <item>회원농가</item>
+        <item>비회원농가</item>
+    </string-array>
+
+</resources>

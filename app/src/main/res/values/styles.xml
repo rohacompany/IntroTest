@@ -1,0 +1,134 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ccaf71</item>
+        <item name="colorPrimaryDark">#8f7b51</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">#ccaf71</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- 일반 텍스트 스타일-->
+    <style name="basic_drawable_tv">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/LightGrey</item>
+        <item name="android:background">@color/White</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="basic_edittext">
+        <item name="android:background">@drawable/basic_et_selector</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="cardview_et_label">
+        <item name="android:background">@color/White</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <style name="cardview_et_label_header" parent="cardview_et_label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/DeepLightGrey</item>
+    </style>
+
+    <style name="basic_searchbox_textview">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TEditButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/dip14</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/int_edit_btn</item>
+        <item name="android:padding">@dimen/dip8</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">@dimen/dip0</item>
+        <item name="android:layout_marginRight">@dimen/dip0</item>
+    </style>
+
+    <style name="TCompleteButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/dip14</item>
+        <item name="android:textColor">#ff423d39</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/int_serv_btn</item>
+        <item name="android:padding">@dimen/dip8</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">@dimen/dip0</item>
+        <item name="android:layout_marginRight">@dimen/dip0</item>
+    </style>
+
+    <style name="TTradeTitlebar">
+        <item name="android:textSize">15.399994dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff422406</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/com_contents_bg_tiles</item>
+        <item name="android:padding">5.0dip</item>
+    </style>
+
+    <style name="TListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@null</item>
+        <item name="android:scrollingCache">true</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@drawable/int_list_bg_dashline_tiles</item>
+        <item name="android:dividerHeight">@dimen/dip0_66</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:footerDividersEnabled">true</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppCompat.CustomDialog" parent="@style/Theme.AppCompat.Dialog">
+
+    </style>
+
+    <style name="Theme.Transparent" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="CustomLabelText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_enter</item>
+        <item name="android:windowExitAnimation">@anim/scale_exit</item>
+    </style>
+
+</resources>
