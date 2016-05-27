@@ -39,57 +39,88 @@
             <TextView
                 style="@style/basic_searchbox_textview"
                 android:layout_height="wrap_content"
+                android:text="시도" />
+
+            <Spinner
+                android:id="@+id/sp_sido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/basic_searchbox_textview"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="구군" />
+
+            <Spinner
+                android:id="@+id/sp_gugun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/area1_array" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/basic_searchbox_textview"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="읍면동" />
+
+            <Spinner
+                android:id="@+id/sp_dong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/area2_array" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/basic_searchbox_textview"
+                android:layout_height="wrap_content"
                 android:text="축협명" />
 
-            <Spinner
+            <EditText
+                style="@style/basic_edittext"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:entries="@array/chukhyeobmyeong_array"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                style="@style/basic_searchbox_textview"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="지역" />
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:entries="@array/area1_array"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                style="@style/basic_searchbox_textview"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="지역" />
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:entries="@array/area2_array"
-                />
+                android:layout_marginLeft="5dp" />
 
         </LinearLayout>
 
@@ -150,9 +181,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="15dp"
-        >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -170,8 +200,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:entries="@array/sex_array"
-                />
+                android:entries="@array/sex_array" />
 
         </LinearLayout>
 
@@ -192,8 +221,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:entries="@array/sayuksangtae_array"
-                />
+                android:entries="@array/sayuksangtae_array" />
 
         </LinearLayout>
 
@@ -214,8 +242,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:entries="@array/deungrokgubun_array"
-                />
+                android:entries="@array/deungrokgubun_array" />
 
         </LinearLayout>
 
@@ -305,8 +332,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:hint="KPN"
-                />
+                android:hint="KPN" />
 
         </LinearLayout>
 
@@ -339,8 +365,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:editable="false"
-                android:gravity="center"
-                />
+                android:gravity="center" />
 
 
             <TextView
@@ -356,8 +381,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:editable="false"
-                android:gravity="center"
-                />
+                android:gravity="center" />
 
         </LinearLayout>
 
@@ -390,8 +414,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:editable="false"
-                android:gravity="center"
-                />
+                android:gravity="center" />
 
 
             <TextView
@@ -407,8 +430,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:editable="false"
-                android:gravity="center"
-                />
+                android:gravity="center" />
 
         </LinearLayout>
 

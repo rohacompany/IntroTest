@@ -46,14 +46,12 @@ public class UIMainActivity extends SubBaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        int a = 0;
-//        if( a % 5 == 0) {
-//            throw new NullPointerException();
-//        }
-
-
         setContentView(R.layout.activity_uimain);
+
         aq = new AQuery(this);
+
+
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

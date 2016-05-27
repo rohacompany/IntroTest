@@ -105,7 +105,6 @@ public class BangyeokSearchActivity extends SubBaseActivity implements BangyeokA
             }
         }, 500);
 
-
     }
 
     @Override

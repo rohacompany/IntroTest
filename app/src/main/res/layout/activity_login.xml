@@ -75,7 +75,7 @@
                                 android:paddingBottom="3.0dip">
 
                                 <EditText
-                                    android:id="@+id/id_edit"
+                                    android:id="@+id/et_user_id"
                                     android:layout_width="fill_parent"
                                     android:layout_height="47.0dip"
                                     android:background="@drawable/int_power_inputbox"
@@ -90,7 +90,7 @@
                                     />
 
                                 <EditText
-                                    android:id="@+id/pw_edit"
+                                    android:id="@+id/et_user_password"
                                     android:layout_width="fill_parent"
                                     android:layout_height="47.0dip"
                                     android:layout_marginTop="6.0dip"

@@ -15,13 +15,12 @@ import com.kth.tobawoo.R;
 import com.kth.tobawoo.ui.GaecheSearchActivity;
 import com.kth.tobawoo.ui.NongaSearchActivity;
 import com.kth.tobawoo.ui.UIMainActivity;
+import com.kth.tobawoo.utils.DBHelper;
 
 /**
  * Created by tommy on 2016-04-15.
  */
-public class NonggaMainFrag extends Fragment{
-
-    AQuery aq;
+public class NonggaMainFrag extends MainCommonFrag{
 
     @Nullable
     @Override
@@ -35,6 +34,11 @@ public class NonggaMainFrag extends Fragment{
         aq.id(R.id.btn_search_gaeche).clicked(this , "click");
 
         aq.id(R.id.view_frag_common_title).text("농가찾기");
+
+        dbHelper = new DBHelper(getActivity());
+
+        setup();
+
        return view;
     }
 

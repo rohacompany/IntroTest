@@ -9,14 +9,41 @@ public class UserInfo implements Serializable {
     private int no;
     private int member_type;
     private String user_id;
-	private String user_pwd;
+	private String password;
 	private String user_phone_number;
 	private String user_email;
 	private String regDate;
 	private String user_name;
 	private String user_address;
+    private String user_desc;
+    private String m_tokken;
+    private String user_level;
 
-	public String getUser_address() {
+    public String getUser_desc() {
+        return user_desc;
+    }
+
+    public void setUser_desc(String user_desc) {
+        this.user_desc = user_desc;
+    }
+
+    public String getM_tokken() {
+        return m_tokken;
+    }
+
+    public void setM_tokken(String m_tokken) {
+        this.m_tokken = m_tokken;
+    }
+
+    public String getUser_level() {
+        return user_level;
+    }
+
+    public void setUser_level(String user_level) {
+        this.user_level = user_level;
+    }
+
+    public String getUser_address() {
 		return user_address;
 	}
 
@@ -56,12 +83,12 @@ public class UserInfo implements Serializable {
         this.user_id = user_id;
     }
 
-    public String getUser_pwd() {
-        return user_pwd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUser_pwd(String user_pwd) {
-        this.user_pwd = user_pwd;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getUser_phone_number() {
@@ -88,18 +115,21 @@ public class UserInfo implements Serializable {
         this.regDate = regDate;
     }
 
-	@Override
-	public String toString() {
-		return "UserInfo{" +
-				"no=" + no +
-				", member_type=" + member_type +
-				", user_id='" + user_id + '\'' +
-				", user_pwd='" + user_pwd + '\'' +
-				", user_phone_number='" + user_phone_number + '\'' +
-				", user_email='" + user_email + '\'' +
-				", regDate='" + regDate + '\'' +
-				", user_name='" + user_name + '\'' +
-				", user_address='" + user_address + '\'' +
-				'}';
-	}
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "no=" + no +
+                ", member_type=" + member_type +
+                ", user_id='" + user_id + '\'' +
+                ", password='" + password + '\'' +
+                ", user_phone_number='" + user_phone_number + '\'' +
+                ", user_email='" + user_email + '\'' +
+                ", regDate='" + regDate + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", user_address='" + user_address + '\'' +
+                ", user_desc='" + user_desc + '\'' +
+                ", m_tokken='" + m_tokken + '\'' +
+                ", user_level='" + user_level + '\'' +
+                '}';
+    }
 }

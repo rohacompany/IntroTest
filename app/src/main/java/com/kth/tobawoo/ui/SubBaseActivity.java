@@ -3,9 +3,12 @@ package com.kth.tobawoo.ui;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -33,9 +36,15 @@ public class SubBaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        aq = new AQuery(this);
+
 
         myApplication = (MyApplication) getApplication();
+    }
+
+    public void setUp(){
+
+        aq = new AQuery(this);
+
     }
 
     @Override
@@ -114,5 +123,26 @@ public class SubBaseActivity extends AppCompatActivity {
 //                }
 //            }, 100);
 //        }
+    }
+
+    public ProgressDialog getProgressDialog(){
+        ProgressDialog pd = new ProgressDialog(this);
+        pd.setMessage("로딩중입니다...");
+        return pd;
+    }
+
+    AlertDialog dialog;
+    public void showAlertDialog(String msg){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(msg);
+        builder.setTitle("알림");
+        builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        dialog = builder.create();
+        dialog.show();
     }
 }
