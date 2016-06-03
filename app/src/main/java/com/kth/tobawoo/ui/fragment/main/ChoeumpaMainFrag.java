@@ -41,7 +41,7 @@ public class ChoeumpaMainFrag extends Fragment{
     }
 
     public void click(View view){
-        clickedListener.onClicked(view);
+//        clickedListener.onClicked(view);
     }
 
     public void startActivity(Intent intent) {

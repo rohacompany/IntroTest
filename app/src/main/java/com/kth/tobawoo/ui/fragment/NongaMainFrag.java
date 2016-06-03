@@ -159,14 +159,14 @@ public class NongaMainFrag extends BaseFrag {
     }
 
     public void setNonggaData(NonggaSearchResultData data){
-        aq.find(R.id.view_search_result).visible();
-        aq.find(R.id.nongga_id).text(data.getNongga_id());
-        aq.find(R.id.chukju_name).text(data.getChukju_name());
-        aq.find(R.id.nongga_code).text(data.getNongga_code());
-        aq.find(R.id.nongga_member_code).text(data.getNongga_member_code());
-        aq.find(R.id.nongga_address).text(data.getNongga_address());
-        aq.find(R.id.nongga_phone_number).text(data.getNongga_phone_number());
-        aq.find(R.id.nongga_home_number).text(data.getNongga_home_number());
+//        aq.find(R.id.view_search_result).visible();
+//        aq.find(R.id.nongga_id).text(data.getNongga_id());
+//        aq.find(R.id.chukju_name).text(data.getChukju_name());
+//        aq.find(R.id.nongga_code).text(data.getNongga_code());
+//        aq.find(R.id.nongga_member_code).text(data.getNongga_member_code());
+//        aq.find(R.id.nongga_address).text(data.getNongga_address());
+//        aq.find(R.id.nongga_phone_number).text(data.getNongga_phone_number());
+//        aq.find(R.id.nongga_home_number).text(data.getNongga_home_number());
     }
 
 

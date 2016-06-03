@@ -49,6 +49,20 @@
                 android:layout_marginLeft="5dp"
                 />
 
+            <TextView
+                android:id="@+id/table_result_search_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="조회결과 ( 0건 )"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/DarkRed"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/table_result_search_title" />
+
 
         </RelativeLayout>
 

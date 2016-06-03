@@ -11,6 +11,7 @@ import android.widget.TabWidget;
 import android.widget.TextView;
 
 import com.kth.tobawoo.R;
+import com.kth.tobawoo.data.CommonInter;
 import com.kth.tobawoo.data.NonggaData;
 import com.kth.tobawoo.data.NonggaType;
 import com.kth.tobawoo.fixedtablelayout.TableFixHeaders;
@@ -140,43 +141,48 @@ public class TableMainActivity extends SubBaseActivity implements OnTableItemCli
 
 
 
-        final TableFixHeaders tableFixHeaders = (TableFixHeaders) findViewById(R.id.table);
-        final NonggaMainAdapter<String> matrixTableAdapter = new NonggaMainAdapter<String>(this, mainHeaders, mainWidths, nt);
-        matrixTableAdapter.setOnTableItemClick(this);
-        tableFixHeaders.setAdapter(matrixTableAdapter);
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                new AsyncTask<Void, Void, Void>() {
-                    @Override
-                    protected Void doInBackground(Void... params) {
-
-                        for (int i = 0; i < 100; i++) {
-                            nt.list.add(new NonggaData("id" + i, "축협" + i, "code" + i, "테스트", "번식농가", "유지", "3" + i, "", "test2" + i, "test3" + i, "2015-12-08", "1" + i , "3" + i , "3" + i));
-                        }
-
-                        return null;
-                    }
-
-                    @Override
-                    protected void onPostExecute(Void aVoid) {
-                        super.onPostExecute(aVoid);
-
-                        matrixTableAdapter.notifyDataSetChanged();
-
-                        tableFixHeaders.scrollTo(0,0);
-                    }
-                }.execute();
-            }
-        }, 500);
+//        final TableFixHeaders tableFixHeaders = (TableFixHeaders) findViewById(R.id.table);
+//        final NonggaMainAdapter<String> matrixTableAdapter = new NonggaMainAdapter<String>(this, mainHeaders, mainWidths, nt);
+//        matrixTableAdapter.setOnTableItemClick(this);
+//        tableFixHeaders.setAdapter(matrixTableAdapter);
+//
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                new AsyncTask<Void, Void, Void>() {
+//                    @Override
+//                    protected Void doInBackground(Void... params) {
+//
+//                        for (int i = 0; i < 100; i++) {
+//                            nt.list.add(new NonggaData("id" + i, "축협" + i, "code" + i, "테스트", "번식농가", "유지", "3" + i, "", "test2" + i, "test3" + i, "2015-12-08", "1" + i , "3" + i , "3" + i));
+//                        }
+//
+//                        return null;
+//                    }
+//
+//                    @Override
+//                    protected void onPostExecute(Void aVoid) {
+//                        super.onPostExecute(aVoid);
+//
+//                        matrixTableAdapter.notifyDataSetChanged();
+//
+//                        tableFixHeaders.scrollTo(0,0);
+//                    }
+//                }.execute();
+//            }
+//        }, 500);
 
 
     }
 
+//    @Override
+//    public void onListItemClicked(View view, int position) {
+//        NonggaData data = nt.list.get(position);
+//        Logger.log(data.toString());
+//    }
+
     @Override
-    public void onListItemClicked(View view, int position) {
-        NonggaData data = nt.list.get(position);
-        Logger.log(data.toString());
+    public void onListItemClicked(View view,CommonInter commonInter, int row, int column) {
+
     }
 }

@@ -11,15 +11,15 @@ import android.view.ViewGroup;
 
 import com.androidquery.AQuery;
 import com.kth.tobawoo.R;
+import com.kth.tobawoo.data.GaecheData;
 import com.kth.tobawoo.ui.GaecheSearchActivity;
 import com.kth.tobawoo.ui.NongaSearchActivity;
 
 /**
  * Created by tommy on 2016-04-15.
  */
-public class GaecheMainFrag extends Fragment{
+public class GaecheMainFrag extends MainCommonFrag{
 
-    AQuery aq;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -32,6 +32,9 @@ public class GaecheMainFrag extends Fragment{
         aq.id(R.id.btn_search_gaeche).clicked(this , "click");
 
         aq.id(R.id.view_frag_common_title).text("개체찾기");
+
+        setup();
+
         return view;
     }
 
@@ -43,7 +46,11 @@ public class GaecheMainFrag extends Fragment{
     }
 
     public void click(View view){
-        clickedListener.onClicked(view);
+
+        setupData();
+
+        GaecheData gaecheData = new GaecheData();
+        clickedListener.onClicked(view , gaecheData);
     }
 
     public void startActivity(Intent intent) {

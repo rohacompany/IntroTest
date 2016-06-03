@@ -2,7 +2,6 @@ package com.kth.tobawoo.ui;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,9 +22,11 @@ import com.androidquery.AQuery;
 import com.astuetz.PagerSlidingTabStrip;
 import com.kth.tobawoo.BuildConfig;
 import com.kth.tobawoo.R;
+import com.kth.tobawoo.data.CommonInter;
+import com.kth.tobawoo.data.GaecheData;
+import com.kth.tobawoo.data.GyobaejeongboData;
+import com.kth.tobawoo.data.NonggaData;
 import com.kth.tobawoo.ui.adapter.MainViewPagerAdapter;
-import com.kth.tobawoo.ui.fragment.MainFrag;
-import com.kth.tobawoo.ui.fragment.NewMainFrag;
 import com.kth.tobawoo.ui.fragment.main.OnFragmentClickedListener;
 import com.kth.tobawoo.utils.Logger;
 
@@ -49,8 +50,6 @@ public class UIMainActivity extends SubBaseActivity
         setContentView(R.layout.activity_uimain);
 
         aq = new AQuery(this);
-
-
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -133,7 +132,6 @@ public class UIMainActivity extends SubBaseActivity
                         finish();
                     }
                 },500);
-
             }
         });
 
@@ -268,27 +266,52 @@ public class UIMainActivity extends SubBaseActivity
     }
 
     @Override
-    public void onClicked(View view) {
-        if(view.getId() == R.id.btn_search_nonga) {
-            Intent intent = new Intent(this, NongaSearchActivity.class);
-            startActivity(intent);
-        }else{
-            final ProgressDialog pd = new ProgressDialog(this);
-            pd.setMessage("서버와 로딩중입니다..잠시만 기다려주세요");
-            pd.show();
-            Handler mHandler = new Handler();
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    pd.dismiss();
-                    String test = null;
-                    test.toString();
-                }
-            } , 5000);
+    public void onClicked(View view , CommonInter commonInter) {
+        Logger.log("uiMain onClicked clicked :  " + view.getId() + "," + R.id.btn_search_gyobae);
+        Intent intent = null;
+        switch (view.getId()){
+            case R.id.btn_search_nonga:
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("data" , (NonggaData)commonInter);
+                intent = new Intent(this, NongaSearchActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case R.id.btn_search_gaeche:
+                Bundle bundle2 = new Bundle();
+                bundle2.putSerializable("data" , (GaecheData)commonInter);
+                intent = new Intent(this, GaecheSearchActivity.class);
+                intent.putExtras(bundle2);
+                startActivity(intent);
+                break;
+            case R.id.btn_search_gyobae:
+                Bundle bundle3 = new Bundle();
+                bundle3.putSerializable("data" , (GyobaejeongboData)commonInter);
+                intent = new Intent(this, GyobaejeongboSearchActivity.class);
+                intent.putExtras(bundle3);
+                startActivity(intent);
+                break;
+        }
+//        if(view.getId() == R.id.btn_search_nonga) {
+//            Intent intent = new Intent(this, NongaSearchActivity.class);
+//            startActivity(intent);
+//        }else{
+//            final ProgressDialog pd = new ProgressDialog(this);
+//            pd.setMessage("서버와 로딩중입니다..잠시만 기다려주세요");
+//            pd.show();
+//            Handler mHandler = new Handler();
+//            mHandler.postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    pd.dismiss();
+//                    String test = null;
+//                    test.toString();
+//                }
+//            } , 5000);
 
 //            Intent intent = new Intent(this , GaecheSearchActivity.class);
 //            startActivity(intent);
-        }
+//        }
     }
 
 

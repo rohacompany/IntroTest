@@ -53,6 +53,10 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="basic_searchbox_textview_w_theme_black" parent="basic_searchbox_textview">
+        <item name="android:textColor">@color/DarkGray</item>
+    </style>
+
     <style name="TEditButton" parent="@android:style/Widget.Button">
         <item name="android:textSize">@dimen/dip14</item>
         <item name="android:textColor">#ffffffff</item>

@@ -117,6 +117,7 @@
                 android:text="축협명" />
 
             <EditText
+                android:id="@+id/et_chukhyup_name"
                 style="@style/basic_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,6 +149,7 @@
                 android:text="농가명" />
 
             <EditText
+                android:id="@+id/et_nonga_name"
                 style="@style/basic_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -169,6 +171,7 @@
                 android:text="품종" />
 
             <Spinner
+                android:id="@+id/sp_pumjong"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
@@ -198,6 +201,7 @@
                 android:text="성별" />
 
             <Spinner
+                android:id="@+id/sp_sex"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:entries="@array/sex_array" />
@@ -219,6 +223,7 @@
                 android:text="사육상태" />
 
             <Spinner
+                android:id="@+id/sp_breed_type"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:entries="@array/sayuksangtae_array" />
@@ -240,6 +245,7 @@
                 android:text="등록구분" />
 
             <Spinner
+                android:id="@+id/sp_deungrokgubun"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:entries="@array/deungrokgubun_array" />
@@ -271,6 +277,7 @@
                 android:text="귀표번호" />
 
             <EditText
+                android:id="@+id/et_gwipyobeonho"
                 style="@style/basic_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -294,6 +301,7 @@
                 android:text="어미귀표번호" />
 
             <EditText
+                android:id="@+id/et_mom_gwipyobeonho"
                 style="@style/basic_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -327,6 +335,7 @@
                 android:text="아비씨\n수소번호(kpn)" />
 
             <EditText
+                android:id="@+id/et_abissisusobeonho"
                 style="@style/basic_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -360,11 +369,11 @@
                 android:text="월령" />
 
             <EditText
+                android:id="@+id/et_wolryeong_start"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center" />
 
 
@@ -376,11 +385,11 @@
                 android:text="~" />
 
             <EditText
+                android:id="@+id/et_wolryeong_end"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center" />
 
         </LinearLayout>
@@ -409,11 +418,11 @@
                 android:text="산차" />
 
             <EditText
+                android:id="@+id/et_sancha_start"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center" />
 
 
@@ -425,11 +434,11 @@
                 android:text="~" />
 
             <EditText
+                android:id="@+id/et_sancha_end"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center" />
 
         </LinearLayout>

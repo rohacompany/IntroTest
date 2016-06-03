@@ -13,7 +13,6 @@ import com.kth.tobawoo.data.NonggaSearchResultData;
 import com.kth.tobawoo.data.NonggaType;
 import com.kth.tobawoo.fixedtablelayout.TableFixHeaders;
 import com.kth.tobawoo.ui.adapter.BangyeokAdapter;
-import com.kth.tobawoo.ui.adapter.NonggaMainAdapter;
 import com.kth.tobawoo.utils.Logger;
 
 public class BangyeokSearchActivity extends SubBaseActivity implements BangyeokAdapter.OnTableItemClick{
@@ -25,7 +24,7 @@ public class BangyeokSearchActivity extends SubBaseActivity implements BangyeokA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nonga_search);
+        setContentView(R.layout.activity_common_search);
 
         aq = new AQuery(this);
 
@@ -114,9 +113,9 @@ public class BangyeokSearchActivity extends SubBaseActivity implements BangyeokA
         NonggaData nonggaData = nt.list.get(position);
 
         NonggaSearchResultData data = new NonggaSearchResultData();
-        data.setNo(100);
-        data.setNongga_id("12312");
-        data.setChukju_name("축주이름");
+//        data.setNo(100);
+//        data.setNongga_id("12312");
+//        data.setChukju_name("축주이름");
 
 //        Intent intent = new Intent();
 //        Bundle bundle = new Bundle();

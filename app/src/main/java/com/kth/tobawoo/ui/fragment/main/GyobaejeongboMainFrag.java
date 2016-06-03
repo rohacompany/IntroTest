@@ -11,13 +11,15 @@ import android.view.ViewGroup;
 
 import com.androidquery.AQuery;
 import com.kth.tobawoo.R;
+import com.kth.tobawoo.data.GyobaejeongboData;
 import com.kth.tobawoo.ui.GaecheSearchActivity;
 import com.kth.tobawoo.ui.NongaSearchActivity;
+import com.kth.tobawoo.utils.Logger;
 
 /**
  * Created by tommy on 2016-04-15.
  */
-public class GyobaejeongboMainFrag extends Fragment{
+public class GyobaejeongboMainFrag extends MainCommonFrag{
 
     AQuery aq;
     @Nullable
@@ -28,10 +30,13 @@ public class GyobaejeongboMainFrag extends Fragment{
 
         aq = new AQuery(view);
 
-        aq.id(R.id.btn_search_nonga).clicked(this , "click");
-        aq.id(R.id.btn_search_gaeche).clicked(this , "click");
+        aq.id(R.id.btn_search_gyobae).clicked(this , "click");
+        aq.id(R.id.btn_search_gyobae_summary).clicked(this , "click");
 
         aq.id(R.id.view_frag_common_title).text("교배정보");
+
+        setup();
+
         return view;
     }
 
@@ -43,7 +48,10 @@ public class GyobaejeongboMainFrag extends Fragment{
     }
 
     public void click(View view){
-        clickedListener.onClicked(view);
+        Logger.log("onClick : " + view.getId());
+        setupData();
+        GyobaejeongboData data = new GyobaejeongboData();
+        clickedListener.onClicked(view ,data);
     }
 
     public void startActivity(Intent intent) {

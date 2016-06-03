@@ -41,7 +41,7 @@ public class BunmanjeongboMainFrag extends Fragment{
     }
 
     public void click(View view){
-        clickedListener.onClicked(view);
+//        clickedListener.onClicked(view);
     }
 
     public void startActivity(Intent intent) {

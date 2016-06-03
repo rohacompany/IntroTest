@@ -16,7 +16,7 @@
     <string name="title_activity_nonga_main">농가관리</string>
     <string name="title_activity_gaechejeongbo_main">개체정보</string>
     <string name="title_activity_gaechegeose_main">개체 거세정보</string>
-    
+
     <string name="title_activity_table_main">검색 결과 조회</string>
     <string name="title_listdetailactivity_list">Items</string>
     <string name="title_listdetailactivity_detail">ListDetailActivity Detail</string>
@@ -33,7 +33,7 @@
         <item>4</item>
         <item>5</item>
     </string-array>
-    
+
     <string-array name="geunnaejibangdo_array">
         <item>전체</item>
         <item>11</item>
@@ -73,21 +73,21 @@
         <item>2</item>
         <item>3</item>
     </string-array>
-    
+
     <string-array name="yukryangdeunggeub_array">
         <item>전체</item>
         <item>A</item>
         <item>B</item>
         <item>C</item>
     </string-array>
-    
+
     <string-array name="chukhyeobmyeong_array">
         <item>전체</item>
         <item>양평축협</item>
         <item>고창축협</item>
         <item>홍성축협</item>
     </string-array>
-    
+
     <string-array name="area1_array">
         <item>전체</item>
         <item>양평</item>
@@ -101,21 +101,21 @@
         <item>고창면</item>
         <item>홍성면</item>
     </string-array>
-    
+
     <string-array name="pumjong_array">
         <item>전체</item>
         <item>한우</item>
         <item>젖소</item>
         <item>육우</item>
     </string-array>
-    
+
     <string-array name="sex_array">
         <item>전체</item>
         <item>암</item>
         <item>수</item>
         <item>거세</item>
     </string-array>
-    
+
     <string-array name="sayuksangtae_array">
         <item>전체</item>
         <item>사육</item>
@@ -123,7 +123,7 @@
         <item>출하</item>
         <item>페사</item>
     </string-array>
-    
+
     <string-array name="deungrokgubun_array">
         <item>전체</item>
         <item>기초</item>

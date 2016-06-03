@@ -83,20 +83,27 @@
             android:name=".ui.CalendarMainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.NongaSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.BangyeokSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.GaecheSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.GyobaejeongboSearchActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.popup.Example1Activity" />
+        <activity android:name=".ui.popup.Example2Activity" />
 
-        <activity android:name=".ui.NongaSearchActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan"
-            />
 
-        <activity android:name=".ui.BangyeokSearchActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan"
-            />
-        <activity android:name=".ui.GaecheSearchActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan"
-            />
+        <activity android:name=".ui.NongaDetailActivity" android:theme="@style/Theme.AppCompat.Dialog.MinWidth" android:windowSoftInputMode="stateHidden|adjustPan"/>
     </application>
 
 </manifest>

@@ -22,7 +22,7 @@
         >
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/btn_search_nonga"
+            android:id="@+id/btn_search_gaeche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bootstrapBrand="primary"
@@ -35,7 +35,7 @@
             />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/btn_search_gaeche"
+            android:id="@+id/btn_search_gaeche_summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bootstrapBrand="danger"
