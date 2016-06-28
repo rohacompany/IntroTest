@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/AppTheme.Toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_cow_big"
+            android:alpha="0.5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:id="@+id/search_bar_container"
+            >
+
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/et_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="바코드를 입력해주세요."
+                android:imeOptions="actionSearch"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                app:bootstrapBrand="info"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="2000000008"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/DeepSkyBlue"
+                android:singleLine="true"
+                android:lines="1"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnSearch"
+                app:bootstrapBrand="info"
+                android:layout_weight="0"
+                android:layout_marginLeft="10dp"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:bootstrapText="{fa_search} 검색"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/search_bar_container"
+            android:paddingLeft="40dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="도체중"
+                app:bootstrapBrand="danger"
+                android:layout_weight="0"
+                />
+
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/et_doWeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                app:bootstrapBrand="info"
+                android:layout_weight="1"
+                android:text="1"
+                android:gravity="center"
+                android:inputType="number|numberSigned"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="등심단면적"
+                app:bootstrapBrand="danger"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/et_deungsimdanmyeonjeok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                app:bootstrapBrand="info"
+                android:layout_weight="1"
+                android:text="3"
+                android:gravity="center"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="등지방두께"
+                app:bootstrapBrand="danger"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/et_deungjibangdukke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                app:bootstrapBrand="info"
+                android:layout_weight="1"
+                android:text="-1"
+                android:gravity="center"
+                />
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="근내지방도"
+                app:bootstrapBrand="danger"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/et_geunnaejibangdo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                app:bootstrapBrand="info"
+                android:layout_weight="1"
+                android:text="8"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_gasang_plan_bottom_main" />
+
+
+</LinearLayout>
+

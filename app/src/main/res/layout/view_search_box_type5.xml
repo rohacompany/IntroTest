@@ -27,7 +27,58 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/basic_searchbox_textview"
+                    android:layout_height="wrap_content"
+                    android:text="농가코드" />
+
+                <EditText
+                    android:id="@+id/et_nonga_id"
+                    style="@style/basic_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/basic_searchbox_textview"
+                    android:layout_height="wrap_content"
+                    android:text="판독자" />
+
+                <EditText
+                    style="@style/basic_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,7 +98,7 @@
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:editable="false"
+                    
                     android:gravity="center" />
 
                 <ImageButton
@@ -67,16 +118,16 @@
                     android:text="~" />
 
                 <EditText
-                    android:id="@+id/tv_type2_date_popup_end"
+                    android:id="@+id/tv_type1_date_popup_end"
                     style="@style/basic_edittext"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:editable="false"
+                    
                     android:gravity="center" />
 
                 <ImageButton
-                    android:id="@+id/ibtn_type2_open_date_popup_end"
+                    android:id="@+id/ibtn_type1_open_date_popup_end"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="5dp"
@@ -107,11 +158,11 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:gravity="center" />
 
             <ImageButton
-                android:id="@+id/ibtn_type3_open_date_popup_start"
+                android:id="@+id/ibtn_type2_open_date_popup_start"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="5dp"
@@ -127,16 +178,16 @@
                 android:text="~" />
 
             <EditText
-                android:id="@+id/tv_type4_date_popup_end"
+                android:id="@+id/tv_type2_date_popup_end"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:gravity="center" />
 
             <ImageButton
-                android:id="@+id/ibtn_type4_open_date_popup_end"
+                android:id="@+id/ibtn_type2_open_date_popup_end"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="5dp"
@@ -160,12 +211,10 @@
                 android:text="거세월령" />
 
             <EditText
-                android:id="@+id/tv_type5_date_popup_start"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center" />
 
 
@@ -177,12 +226,10 @@
                 android:text="~" />
 
             <EditText
-                android:id="@+id/tv_type6_date_popup_end"
                 style="@style/basic_edittext"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center" />
 
 
@@ -206,7 +253,6 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center"
                 android:hint="0.0kg" />
 
@@ -223,7 +269,6 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
                 android:gravity="center"
                 android:hint="0.0kg" />
 
@@ -248,7 +293,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:entries="@array/bcs_array"
                 android:gravity="center" />
 
@@ -265,39 +310,10 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:entries="@array/bcs_array"
                 android:gravity="center" />
 
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    style="@style/basic_searchbox_textview"
-                    android:layout_height="wrap_content"
-                    android:text="판독자" />
-
-                <EditText
-                    style="@style/basic_edittext"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
@@ -337,7 +353,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:gravity="center"
                 android:hint="cm"
                 />
@@ -355,7 +371,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:gravity="center"
                 android:hint="cm"
                 />
@@ -381,7 +397,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:gravity="center"
                 android:hint="입력 ㎠"
                 />
@@ -399,7 +415,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:gravity="center"
                 android:hint="입력 ㎠"
                 />
@@ -425,7 +441,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:entries="@array/geunnaejibangdo_array"
                 android:gravity="center" />
 
@@ -442,7 +458,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:entries="@array/geunnaejibangdo_array"
                 android:gravity="center" />
 
@@ -467,7 +483,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:editable="false"
+            
             android:entries="@array/yukjildeunggeub_array"
             android:gravity="center" />
 
@@ -484,7 +500,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:editable="false"
+            
             android:entries="@array/yukjildeunggeub_array"
             android:gravity="center" />
 
@@ -509,7 +525,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:entries="@array/yukryangdeunggeub_array"
                 android:gravity="center" />
 
@@ -526,10 +542,9 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:editable="false"
+                
                 android:entries="@array/yukryangdeunggeub_array"
                 android:gravity="center" />
-
 
         </LinearLayout>
 

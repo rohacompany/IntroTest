@@ -17,41 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="10dp"
-            android:paddingRight="15dp"
-            android:paddingTop="10dp">
-
-            <com.beardedhen.androidbootstrap.BootstrapButton
-                android:id="@+id/btn_search_nonga"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                app:bootstrapBrand="primary"
-                app:bootstrapSize="xl"
-                app:bootstrapText="{fa-search} 초음파 정보"
-                app:buttonMode="regular"
-                app:roundedCorners="true"
-                app:showOutline="false" />
-
-            <com.beardedhen.androidbootstrap.BootstrapButton
-                android:id="@+id/btn_search_gaeche"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                app:bootstrapBrand="danger"
-                app:bootstrapSize="xl"
-                app:bootstrapText="{fa-search} 초음파요약본"
-                app:buttonMode="regular"
-                app:roundedCorners="true"
-                app:showOutline="false" />
-
-        </LinearLayout>
-
-
     </LinearLayout>
 
 

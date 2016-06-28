@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:orientation="vertical"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="요약 테이블"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/LightGrey" />
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:paddingRight="1dp">
+
+                        <TextView
+                            style="@style/frag_tab_summary_tablerow_textview_header"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="축협명" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/frag_tab_summary_tablerow_textview_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="교배두수"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="미경\n산우" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1산차" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="2산차" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="3산차" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="4산차" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="5산차" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="6산차\n이상" />
+
+                                <TextView
+                                    style="@style/frag_tab_summary_tablerow_textview_header"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="전체" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:orientation="vertical"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/chart_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="요약 그래프"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/LightGrey" />
+
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"
+
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

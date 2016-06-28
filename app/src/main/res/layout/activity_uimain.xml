@@ -45,8 +45,9 @@
                     android:padding="10dp">
 
                     <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:id="@+id/btn_profile"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
                         android:src="@drawable/ic_profile_edit"
                         app:bootstrapBrand="danger"
                         app:hasBorder="true" />
@@ -60,6 +61,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tv_user_id"
                         style="@style/basic_drawable_tv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -237,7 +239,7 @@
                             android:textColor="@color/Gray"
                             android:textSize="@dimen/common_text_size"
                             android:background="@drawable/basic_selector"
-                            android:id="@+id/tv_gaeche_jeongbo"
+                            android:id="@+id/tv_plan"
                             android:clickable="true"
                             android:focusable="true"
                             android:onClick="showNotWorking"

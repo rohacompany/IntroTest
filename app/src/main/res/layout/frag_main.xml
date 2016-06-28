@@ -24,7 +24,6 @@
         <include
             android:id="@+id/view_main_card_view_layout_1"
             layout="@layout/view_main_card_view"
-
             />
 
         <include

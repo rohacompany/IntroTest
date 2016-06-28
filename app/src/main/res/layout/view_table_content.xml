@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
 
-            <com.kth.tobawoo.fixedtablelayout.TableFixHeaders
+            <com.tobawoo.nh2016.fixedtablelayout.TableFixHeaders
                 android:id="@+id/table"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

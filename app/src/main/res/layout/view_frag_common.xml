@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/view_frag_common_title"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="농가기본정보"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/Black" />
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/view_frag_common_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="농가기본정보"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_search_result_summary"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            app:bootstrapText="{fa-search} 결과 조회"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_search_result_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:bootstrapText="{fa-search} 요약본 조회"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false"
+            android:layout_toStartOf="@+id/btn_search_reset"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btn_search_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="xl"
+            app:bootstrapText="{fa-refresh} 초기화"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
@@ -37,7 +87,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:text="시도" />
 
@@ -45,7 +95,7 @@
                 android:id="@+id/sp_sido"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                />
+                android:prompt="@string/all" />
 
         </LinearLayout>
 
@@ -58,7 +108,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="구군" />
@@ -67,7 +117,8 @@
                 android:id="@+id/sp_gugun"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:entries="@array/area1_array" />
+                android:entries="@array/area1_array"
+                android:prompt="@string/all" />
 
         </LinearLayout>
 
@@ -80,7 +131,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="읍면동" />
@@ -89,7 +140,8 @@
                 android:id="@+id/sp_dong"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:entries="@array/area2_array" />
+                android:entries="@array/area2_array"
+                android:prompt="@string/all" />
 
         </LinearLayout>
 
@@ -112,7 +164,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:text="축협명" />
 
@@ -125,16 +177,6 @@
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-
-        >
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -144,7 +186,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:text="농가명" />
 
@@ -166,7 +208,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:text="품종" />
 
@@ -196,7 +238,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:text="성별" />
 
@@ -217,7 +259,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="사육상태" />
@@ -239,7 +281,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="등록구분" />
@@ -271,7 +313,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="귀표번호" />
@@ -295,7 +337,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="어미귀표번호" />
@@ -310,16 +352,6 @@
 
         </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-
-        >
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -329,7 +361,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="아비씨\n수소번호(kpn)" />
@@ -364,16 +396,18 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:text="월령" />
 
             <EditText
                 android:id="@+id/et_wolryeong_start"
                 style="@style/basic_edittext"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_weight="1"
                 android:gravity="center" />
 
 
@@ -382,27 +416,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"
+                android:layout_weight="0"
                 android:text="~" />
 
             <EditText
                 android:id="@+id/et_wolryeong_end"
                 style="@style/basic_edittext"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_weight="1"
                 android:gravity="center" />
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-
-        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -410,19 +436,23 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
 
             <TextView
-                style="@style/basic_searchbox_textview"
+                style="@style/basic_searchbox_textview_enabled"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:text="산차" />
 
             <EditText
                 android:id="@+id/et_sancha_start"
                 style="@style/basic_edittext"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_weight="1"
                 android:gravity="center" />
 
 
@@ -431,14 +461,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"
+                android:layout_weight="0"
                 android:text="~" />
 
             <EditText
                 android:id="@+id/et_sancha_end"
                 style="@style/basic_edittext"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
                 android:gravity="center" />
 
         </LinearLayout>

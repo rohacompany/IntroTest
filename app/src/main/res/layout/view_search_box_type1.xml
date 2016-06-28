@@ -38,12 +38,12 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@style/basic_searchbox_textview"
+                    style="@style/basic_searchbox_textview_enabled"
                     android:layout_height="wrap_content"
                     android:text="농가아이디" />
 
                 <EditText
-                    android:id="@+id/et_nonga_id"
+                    android:id="@+id/et_barcode"
                     style="@style/basic_edittext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,13 +88,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@style/basic_searchbox_textview"
+                    style="@style/basic_searchbox_textview_enabled"
                     android:layout_height="wrap_content"
                     android:text="사육두수" />
 
